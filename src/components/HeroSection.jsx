@@ -1,0 +1,39 @@
+import { FaArrowDown } from "react-icons/fa6";
+
+export const HeroSection = () => {
+    return (
+        <section
+            id="hero"
+            className="relative min-h-screen flex flex-col items-center justify-center px-4 snap-start"
+        >
+            <div className="container max-w-4xl mx-auto text-center z-10">
+                <div className="space-y-6">
+                    <h1 className="text-4xl md:text-6x font-bold tracking-light">  
+                        <span className="opacity-0 animate-fade-in"> Hi, I'm </span>
+                        <span className="text-primary opacity-0 animate-fade-in-delay-1"> 
+                            Rajit 
+                        </span> {' '}
+                        <span className="text-gradient md-2 opacity-0 animate-fade-in-delay-2"> 
+                            Dakhane 
+                        </span>
+                    </h1>
+
+                    <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3"> 
+                        I build web apps end to end, from the interface down to the database. I add AI where it actually helps, and try to get the security right the first time.     
+                    </p>
+
+                    <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+                        <a href="#projects" className="cosmic-button">
+                            View My Work
+                        </a>
+                    </div>    
+                </div>
+            </div>
+
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+                <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
+                <FaArrowDown className="h-5 w-5 text-primary" />
+            </div>
+        </section>
+    );
+};
